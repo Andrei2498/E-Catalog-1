@@ -7,7 +7,7 @@ public class SocialNetworkServer {
     private static final int PORT = 8100;
     private ServerSocket serverSocket;
     private boolean running = false;
-    private SocialNetwork network=new SocialNetwork();
+
 
     public static void main(String[] args) throws IOException {
         SocialNetworkServer server = new SocialNetworkServer();
@@ -31,7 +31,7 @@ public class SocialNetworkServer {
             System.out.println ("Waiting for a client ...");
             Socket socket = serverSocket.accept();
             // Execute the client's request in a new thread
-            new ClientThread(socket,network).start();
+            new ClientThread(socket).start();
         }
 
     }
