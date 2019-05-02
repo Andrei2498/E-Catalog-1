@@ -1,12 +1,17 @@
 import java.net.ServerSocket;
 import java.io.IOException;
 import java.net.Socket;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 
 public class SocialNetworkServer {
     private static final int PORT = 8100;
     private ServerSocket serverSocket;
     private boolean running = false;
+    Connection connection;
 
 
     public static void main(String[] args) throws IOException {
@@ -21,7 +26,8 @@ public class SocialNetworkServer {
 
     }
 
-    private void init() throws IOException{
+    private void init() throws IOException {
+        connection = Database.getConnection();
         serverSocket = new ServerSocket(PORT);
         this.running=true;
     }
@@ -42,5 +48,6 @@ public class SocialNetworkServer {
     private void stop() throws IOException {
         this.running = false;
         serverSocket.close();
+        Database.closeConnection();
     }
 }
