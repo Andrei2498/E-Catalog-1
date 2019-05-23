@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aff7fd5-dec5-4129-aab9-a3646d90eda4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/connection/CreateConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/connection/Database.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Elev.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Liceu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Materie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Nota.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Parinte.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Profesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Client.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Absenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Absenta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdaugareNota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AdaugareNota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AfisareNotaSimpla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AfisareNotaSimpla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AfisareNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AfisareNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ButtonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ButtonAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Nota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Nota.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parinte.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Parinte.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Parinte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Parinte.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Profesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProfesorAbsente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ProfesorAbsente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProfesorNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ProfesorNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Student.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StudentAbsente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudentAbsente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StudentNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudentNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StudentStatistici.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudentStatistici.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/adaugareNota.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/adaugareNota.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profesorAbsente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/profesorAbsente.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profesorNote.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/profesorNote.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/profilProfesor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/profilProfesor.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studentAbsente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/studentAbsente.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studentNote.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/studentNote.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/studentStatistici.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/studentStatistici.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Client.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -54,7 +19,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ButtonAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
+            <state relative-caret-position="1700">
               <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ProfesorAbsente.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="38" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="595">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,7 +43,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/Profesor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
+            <state relative-caret-position="-203">
               <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -91,7 +56,7 @@
         <entry file="file://$PROJECT_DIR$/src/view/profilProfesor.fxml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
-              <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder" />
@@ -100,8 +65,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/ProfesorNote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="54" column="41" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="54" selection-end-column="41" />
+            <state relative-caret-position="250">
+              <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/view/Client.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -160,8 +137,8 @@
         <option value="$PROJECT_DIR$/src/connection/CreateConnection.java" />
         <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/view/Parinte.java" />
-        <option value="$PROJECT_DIR$/src/view/Client.java" />
         <option value="$PROJECT_DIR$/src/view/ProfesorAbsente.java" />
+        <option value="$PROJECT_DIR$/src/view/Client.java" />
       </list>
     </option>
   </component>
@@ -177,8 +154,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -195,7 +170,25 @@
               <item name="Client" type="b2602c69:ProjectViewProjectNode" />
               <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="connection" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Client" type="b2602c69:ProjectViewProjectNode" />
@@ -207,6 +200,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -306,17 +301,18 @@
       <workItem from="1558610512887" duration="1042000" />
       <workItem from="1558612102022" duration="148000" />
       <workItem from="1558612820126" duration="1765000" />
+      <workItem from="1558649344784" duration="132000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188362000" />
+    <option name="totallyTimeSpent" value="188494000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14899328" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15031983" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -325,7 +321,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32719547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32690248" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -752,19 +748,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-206">
-          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ButtonAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
+        <state relative-caret-position="1700">
           <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -772,10 +758,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ProfesorNote.java">
+    <entry file="file://$PROJECT_DIR$/src/view/ProfesorAbsente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="54" column="41" lean-forward="true" selection-start-line="30" selection-start-column="3" selection-end-line="54" selection-end-column="41" />
+        <state relative-caret-position="595">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Profesor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -785,25 +781,25 @@
     <entry file="file://$PROJECT_DIR$/src/view/profilProfesor.fxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
-          <caret line="23" column="19" lean-forward="true" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
         </state>
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/Profesor.java">
+    <entry file="file://$PROJECT_DIR$/src/view/ProfesorNote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="250">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ProfesorAbsente.java">
+    <entry file="file://$PROJECT_DIR$/src/view/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="238">
+          <caret line="32" column="60" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
