@@ -32,7 +32,6 @@ public class Client extends Application implements Initializable {
     public static ButtonAction action=new ButtonAction();
     public static entity.Profesor profesor = new Profesor();
 
-
     public static void main(String[] args){
         launch(args);
 
