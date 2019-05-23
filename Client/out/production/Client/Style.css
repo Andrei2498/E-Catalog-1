@@ -1,0 +1,48 @@
+.button
+{
+    -fx-background-color: #af1c1c;
+}
+
+.background
+{
+    -fx-background-color: #20232a;
+}
+
+.menu-bar{
+    -fx-background-color: #af1c1c;
+}
+
+.menu-item .label {
+    -fx-text-fill: white;
+}
+
+.menu-item:focused {
+    -fx-background-color: #20232a;
+}
+
+.menu-item:focused .label {
+    -fx-text-fill: white;
+}
+
+.context-menu {
+    -fx-background-color: #af1c1c;
+}
+
+.chart-title {
+    -fx-text-fill: #4682b4;
+    -fx-font-size: 1.6em;
+}
+
+.axis {
+    -fx-font-size: 1.4em;
+    -fx-tick-label-fill:#4682b4;
+
+}
+
+.menu .label{     -fx-text-fill: white;}
+
+.chart-pie-label {
+    -fx-fill: #4682b4;
+    -fx-font-size: 1em;
+}
+
