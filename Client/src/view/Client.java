@@ -1,5 +1,7 @@
 package view;
 
+import controller.ProfesorController;
+import entity.Profesor;
 import javafx.application.Application;
 
 import java.io.IOException;
@@ -28,6 +30,8 @@ public class Client extends Application implements Initializable {
     private Text invalidLoginMsg;
 
     public static ButtonAction action=new ButtonAction();
+    public static entity.Profesor profesor = new Profesor();
+
 
     public static void main(String[] args){
         launch(args);
@@ -49,24 +53,37 @@ public class Client extends Application implements Initializable {
 
             //userName.clear();
             //password.clear();
-            if(userName.getText().compareTo("user")==0&&password.getText().compareTo("pass")==0) {
-                createSecondStage("Student.fxml");
-                ((Node) event.getSource()).getScene().getWindow().hide();
-                System.out.printf("Text field: %b%n", invalidLoginMsg);
-                action.setTypeAccount("Student");
-            }
-            else if(userName.getText().compareTo("user1")==0&&password.getText().compareTo("pass")==0){
-                createSecondStage("Parinte.fxml");
-                ((Node) event.getSource()).getScene().getWindow().hide();
-                action.setTypeAccount("Parinte");
-            }
-            else if(userName.getText().compareTo("user2")==0&&password.getText().compareTo("pass")==0){
+        String username;
+        String passWord;
+
+        if(userName.getText().startsWith("P.")) {
+            ProfesorController profesorController = new ProfesorController();
+            Client.profesor = profesorController.login(userName.getText(),password.getText());
+            System.out.println(profesor.toString());
+            if(profesor.getId() > 0){
                 createSecondStage("profilProfesor.fxml");
                 ((Node) event.getSource()).getScene().getWindow().hide();
                 action.setTypeAccount("Profesor");
-            }
-            else
+            } else {
                 invalidLoginMsg.setVisible(true);
+            }
+//            createSecondStage("Student.fxml");
+//            ((Node) event.getSource()).getScene().getWindow().hide();
+//            System.out.printf("Text field: %b%n", invalidLoginMsg);
+//            action.setTypeAccount("Student");
+        }
+        else if(userName.getText().compareTo("user1")==0&&password.getText().compareTo("pass")==0){
+//            createSecondStage("Parinte.fxml");
+//            ((Node) event.getSource()).getScene().getWindow().hide();
+//            action.setTypeAccount("Parinte");
+        }
+        else if(userName.getText().compareTo("user2")==0&&password.getText().compareTo("pass")==0){
+//            createSecondStage("profilProfesor.fxml");
+//            ((Node) event.getSource()).getScene().getWindow().hide();
+//            action.setTypeAccount("Profesor");
+        }
+        else
+            invalidLoginMsg.setVisible(true);
     }
 
 

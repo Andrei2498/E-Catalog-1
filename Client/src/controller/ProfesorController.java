@@ -31,6 +31,8 @@ public class ProfesorController {
             profesor.setMaterie(new MaterieController().getMaterieById(Integer.parseInt(prof[9])));
         } catch (SQLException e){
             System.out.println("Exceptie " + e);
+        } catch (NumberFormatException e){
+            return profesor;
         }
 
         return profesor;
