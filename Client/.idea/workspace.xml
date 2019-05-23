@@ -1,7 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6aff7fd5-dec5-4129-aab9-a3646d90eda4" name="Default Changelist" comment="" />
+    <list default="true" id="6aff7fd5-dec5-4129-aab9-a3646d90eda4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/connection/CreateConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/connection/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Elev.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Liceu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Materie.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Nota.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Parinte.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Profesor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Client.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Absenta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Absenta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AdaugareNota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AdaugareNota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AfisareNotaSimpla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AfisareNotaSimpla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AfisareNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/AfisareNote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ButtonAction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Main.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Nota.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Nota.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parinte.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Parinte.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Parinte.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Parinte.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Profesor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProfesorAbsente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ProfesorAbsente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProfesorNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ProfesorNote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Student.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentAbsente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudentAbsente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudentNote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StudentStatistici.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/StudentStatistici.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adaugareNota.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/adaugareNota.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profesorAbsente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/profesorAbsente.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profesorNote.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/profesorNote.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/profilProfesor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/profilProfesor.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studentAbsente.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/studentAbsente.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studentNote.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/studentNote.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/studentStatistici.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/studentStatistici.fxml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,74 +46,73 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ButtonAction.java">
+        <entry file="file://$PROJECT_DIR$/src/view/ButtonAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="110" column="81" selection-start-line="110" selection-start-column="81" selection-end-line="110" selection-end-column="81" />
+            <state relative-caret-position="1802">
+              <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/Elev.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/Liceu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/Materie.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/Nota.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/entity/Parinte.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ProfesorAbsente.java">
+        <entry file="file://$PROJECT_DIR$/src/view/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/profesorAbsente.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AfisareNotaSimpla.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#787#788#0" expanded="true" />
-                <element signature="e#851#852#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AfisareNote.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
-                <element signature="e#623#624#0" expanded="true" />
-                <element signature="e#867#868#0" expanded="true" />
-                <element signature="e#929#930#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ProfesorNote.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1706">
-              <caret line="146" selection-start-line="146" selection-end-line="146" />
+            <state relative-caret-position="202">
+              <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -85,33 +121,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/StudentAbsente.java">
+        <entry file="file://$PROJECT_DIR$/src/entity/Profesor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="58" column="61" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="61" />
+            <state relative-caret-position="34">
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/Absenta.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/Parinte.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1241">
+              <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/adaugareNota.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1122">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/profesorNote.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1870">
-              <caret line="110" column="14" selection-start-line="110" selection-start-column="14" selection-end-line="110" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -124,8 +158,8 @@
         <option value="JavaFXApplication" />
         <option value="CSS File" />
         <option value="package-info" />
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -153,7 +187,6 @@
         <option value="$PROJECT_DIR$/src/StudentNote.java" />
         <option value="$PROJECT_DIR$/src/StudentStatistici.java" />
         <option value="$PROJECT_DIR$/src/profilProfesor.fxml" />
-        <option value="$PROJECT_DIR$/src/Client.java" />
         <option value="$PROJECT_DIR$/src/Student.java" />
         <option value="$PROJECT_DIR$/src/profesorNote.fxml" />
         <option value="$PROJECT_DIR$/src/Profesor.java" />
@@ -164,12 +197,17 @@
         <option value="$PROJECT_DIR$/src/ProfesorNote.java" />
         <option value="$PROJECT_DIR$/src/profesorAbsente.fxml" />
         <option value="$PROJECT_DIR$/src/ButtonAction.java" />
+        <option value="$PROJECT_DIR$/src/connection/Database.java" />
+        <option value="$PROJECT_DIR$/src/connection/CreateConnection.java" />
+        <option value="$PROJECT_DIR$/src/Client.java" />
+        <option value="$PROJECT_DIR$/src/view/Parinte.java" />
+        <option value="$PROJECT_DIR$/src/view/Client.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="347" />
+    <option name="y" value="22" />
     <option name="width" value="1615" />
     <option name="height" value="880" />
   </component>
@@ -179,8 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -193,17 +229,32 @@
               <item name="Client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Client" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558555240237" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/javafaker-0.17.2.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../javafx-sdk-11.0.2/lib/javafx.web.jar!/" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -214,6 +265,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Documents\GitHub\E-Catalog\Client\src\view" />
       <recent name="E:\GitHub\E-Catalog\Client\src\img" />
     </key>
   </component>
@@ -231,7 +283,7 @@
   </component>
   <component name="RunManager" selected="Application.Client">
     <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Client" />
+      <option name="MAIN_CLASS_NAME" value="view.Client" />
       <module name="Client" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -291,17 +343,19 @@
       <workItem from="1558514091136" duration="6858000" />
       <workItem from="1558525573831" duration="14820000" />
       <workItem from="1558547790808" duration="4437000" />
+      <workItem from="1558610512887" duration="1042000" />
+      <workItem from="1558612102022" duration="148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185407000" />
+    <option name="totallyTimeSpent" value="186597000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="347" y="22" width="1615" height="880" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25100672" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17749196" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -310,7 +364,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32797858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -367,16 +421,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/IdeaProjects/Server/src/SocialNetworkServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Interfata.java" />
     <entry file="file://$PROJECT_DIR$/src/SocialNetworkClient.java" />
     <entry file="file://$PROJECT_DIR$/src/Controller.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_202/src.zip!/java/awt/MenuItem.java">
@@ -511,7 +555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.fxml">
+    <entry file="file://$PROJECT_DIR$/src/view/Main.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="421">
@@ -520,7 +564,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ScreenController.java" />
-    <entry file="file://$PROJECT_DIR$/src/Student.fxml">
+    <entry file="file://$PROJECT_DIR$/src/view/Student.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -528,7 +572,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/studentNote.fxml">
+    <entry file="file://$PROJECT_DIR$/src/view/studentNote.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1058">
@@ -536,7 +580,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/studentAbsente.fxml">
+    <entry file="file://$PROJECT_DIR$/src/view/studentAbsente.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -544,7 +588,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Nota.java">
+    <entry file="file://$PROJECT_DIR$/src/view/Nota.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="10" column="72" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="72" />
@@ -554,7 +598,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Style.css">
+    <entry file="file://$PROJECT_DIR$/src/view/Style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
@@ -562,7 +606,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/StudenStatistici.java" />
-    <entry file="file://$PROJECT_DIR$/src/Parinte.fxml">
+    <entry file="file://$PROJECT_DIR$/src/view/Parinte.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2210">
@@ -570,7 +614,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentNote.java">
+    <entry file="file://$PROJECT_DIR$/src/view/StudentNote.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1479">
           <caret line="103" column="41" selection-start-line="103" selection-start-column="8" selection-end-line="103" selection-end-column="41" />
@@ -580,7 +624,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentStatistici.java">
+    <entry file="file://$PROJECT_DIR$/src/view/StudentStatistici.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="37" selection-end-column="5" />
@@ -590,7 +634,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/studentStatistici.fxml">
+    <entry file="file://$PROJECT_DIR$/src/view/studentStatistici.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -598,41 +642,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Student.java">
+    <entry file="file://$PROJECT_DIR$/src/view/Student.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-798">
           <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Parinte.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="80" column="5" lean-forward="true" selection-start-line="70" selection-start-column="4" selection-end-line="80" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Absenta.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AdaugareNota.java">
+    <entry file="file://$PROJECT_DIR$/src/view/AdaugareNota.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
           <caret line="12" column="9" lean-forward="true" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
@@ -642,7 +659,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Profesor.java">
+    <entry file="file://$PROJECT_DIR$/src/view/Profesor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
@@ -652,7 +669,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StudentAbsente.java">
+    <entry file="file://$PROJECT_DIR$/src/view/profilProfesor.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/StudentAbsente.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="765">
           <caret line="58" column="61" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="61" />
@@ -662,7 +687,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/adaugareNota.fxml">
+    <entry file="file://$PROJECT_DIR$/src/view/adaugareNota.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1122">
@@ -670,7 +695,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/profesorNote.fxml">
+    <entry file="file://$PROJECT_DIR$/src/view/profesorNote.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
@@ -678,33 +703,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AfisareNote.java">
+    <entry file="file://$PROJECT_DIR$/src/view/ProfesorAbsente.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#623#624#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
-            <element signature="e#929#930#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProfesorNote.java">
+    <entry file="file://$PROJECT_DIR$/src/view/profesorAbsente.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1706">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AfisareNotaSimpla.java">
+    <entry file="file://$PROJECT_DIR$/src/view/AfisareNotaSimpla.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
+        <state relative-caret-position="238">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -714,36 +730,119 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/profilProfesor.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/view/AfisareNote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ButtonAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="110" column="81" selection-start-line="110" selection-start-column="81" selection-end-line="110" selection-end-column="81" />
+        <state relative-caret-position="340">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/profesorAbsente.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/view/ProfesorNote.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="233">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProfesorAbsente.java">
+    <entry file="file://$PROJECT_DIR$/src/connection/CreateConnection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/connection/Database.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="30" lean-forward="true" selection-start-column="30" selection-end-column="30" />
+          <caret column="19" selection-start-column="19" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ButtonAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="110" column="31" selection-start-line="110" selection-start-column="31" selection-end-line="110" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Elev.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Liceu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Materie.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Nota.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Parinte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/entity/Profesor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Absenta.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Parinte.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1241">
+          <caret line="73" column="40" selection-start-line="73" selection-start-column="40" selection-end-line="73" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="38" column="61" selection-start-line="38" selection-start-column="61" selection-end-line="38" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -776,7 +875,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>src</last-edited>
+          <last-edited>javafx-swt</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

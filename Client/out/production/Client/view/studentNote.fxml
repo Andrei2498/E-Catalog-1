@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="741.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StudentNote">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#af1c1c" height="65.0" layoutY="686.0" stroke="BLACK" strokeType="INSIDE" width="1346.0" />
+      <Text fill="WHITE" layoutX="725.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medie curenta:">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="medieCurenta" fill="WHITE" layoutX="938.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medie curenta">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="725.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numar note actual:">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="numarNote" fill="WHITE" layoutX="985.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numar note">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="725.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numar note necesar:">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="numarNoteNecesar" fill="WHITE" layoutX="1005.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numar note">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="721.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Situatie promovare:">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <Text fx:id="indicePromovare" fill="WHITE" layoutX="985.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Promovat">
+         <font>
+            <Font name="System Bold" size="28.0" />
+         </font>
+      </Text>
+      <LineChart fx:id="graficNote" layoutX="721.0" layoutY="258.0" legendVisible="false" title="Reprezentarea notelor in timp">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <MenuBar prefHeight="37.0" prefWidth="1346.0">
+         <menus>
+            <Menu mnemonicParsing="false" text="Profil">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#buttonProfilePressed" text="Show" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Note">
+               <items>
+                  <Menu mnemonicParsing="false" text="Materii Umaniste">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Limba Romana" />
+                        <MenuItem mnemonicParsing="false" text="Istorie" />
+                        <MenuItem mnemonicParsing="false" text="Geografie" />
+                        <MenuItem mnemonicParsing="false" text="Logica" />
+                        <MenuItem mnemonicParsing="false" text="Filozofie" />
+                        <MenuItem mnemonicParsing="false" text="Logica" />
+                        <MenuItem mnemonicParsing="false" text="Limba Franceza" />
+                        <MenuItem mnemonicParsing="false" text="Limba Engleza" />
+                        <MenuItem mnemonicParsing="false" text="Psihologie" />
+                        <MenuItem mnemonicParsing="false" text="Economie" />
+                        <MenuItem mnemonicParsing="false" text="Literatura Universala" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Materii Reale">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Matematica" />
+                        <MenuItem mnemonicParsing="false" text="Fizica" />
+                        <MenuItem mnemonicParsing="false" text="Chimie" />
+                        <MenuItem mnemonicParsing="false" text="Biologie" />
+                        <MenuItem mnemonicParsing="false" text="Informatica" />
+                        <MenuItem mnemonicParsing="false" text="TIC" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Materii Vocationale">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Desen" />
+                        <MenuItem mnemonicParsing="false" text="Educatie Muzicala" />
+                        <MenuItem mnemonicParsing="false" text="Educatie Fizica" />
+                        <MenuItem mnemonicParsing="false" text="Religie" />
+                     </items>
+                  </Menu>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Absente">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#buttonAbsentePressed" text="Show" />
+               </items></Menu>
+            <Menu mnemonicParsing="false" text="Observatii" />
+            <Menu mnemonicParsing="false" text="Statistici" />
+         </menus>
+         <padding>
+            <Insets left="25.0" top="3.0" />
+         </padding>
+      </MenuBar>
+      <TableView fx:id="tabelaNote" layoutY="37.0" prefHeight="649.0" prefWidth="660.0">
+        <columns>
+          <TableColumn fx:id="coloanaNota" prefWidth="98.0" text="Nota">
+            <cellValueFactory>
+                  <PropertyValueFactory property="nota" />
+               </cellValueFactory>
+          </TableColumn>
+          <TableColumn fx:id="coloanaData" prefWidth="205.00003051757812" text="Data">
+            <cellValueFactory>
+                  <PropertyValueFactory property="data" />
+               </cellValueFactory>
+          </TableColumn>
+            <TableColumn fx:id="coloanaProfesor" minWidth="0.0" prefWidth="258.0" text="Profesor">
+            <cellValueFactory>
+                  <PropertyValueFactory property="profesor" />
+               </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="coloanaTeza" minWidth="0.0" prefWidth="97.0" text="Nota Teza">
+            <cellValueFactory>
+                  <PropertyValueFactory property="tezas" />
+               </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
