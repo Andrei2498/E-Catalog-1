@@ -3,14 +3,14 @@ package entity;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class Nota {
+public class Teze {
     private int idElev;
     private int idMaterie;
     private int idProfesor;
     private int nota;
     private LocalDate dataNotare;
 
-    public Nota(int idElev, int idMaterie, int idProfesor, int nota, LocalDate dataNotare) {
+    public Teze(int idElev, int idMaterie, int idProfesor, int nota, LocalDate dataNotare) {
         this.idElev = idElev;
         this.idMaterie = idMaterie;
         this.idProfesor = idProfesor;
@@ -72,13 +72,13 @@ public class Nota {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Nota)) return false;
-        Nota nota1 = (Nota) o;
-        return idElev == nota1.idElev &&
-                idMaterie == nota1.idMaterie &&
-                idProfesor == nota1.idProfesor &&
-                nota == nota1.nota &&
-                Objects.equals(dataNotare, nota1.dataNotare);
+        if (!(o instanceof Teze)) return false;
+        Teze teze = (Teze) o;
+        return idElev == teze.idElev &&
+                idMaterie == teze.idMaterie &&
+                idProfesor == teze.idProfesor &&
+                nota == teze.nota &&
+                dataNotare.equals(teze.dataNotare);
     }
 
     @Override
