@@ -1,5 +1,6 @@
 package view;
 
+import entity.Elev;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -61,9 +62,7 @@ public class Parinte implements Initializable {
     @FXML
     private Text parinteEmail;
 
-
     /*Button pannel methods for changing scene.*/
-
     public void buttonMarksPressed(ActionEvent event){
         Client.action.setPane(rootPane);
         Client.action.setEvent(event);
@@ -87,8 +86,39 @@ public class Parinte implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        File file=new File("src/img/male.png");
+        Elev elev = Client.parinte.getElev();
+        File file;
+        if(Client.parinte.getGen().compareTo("Masculin") == 0){
+           file =new File("src/img/male.png");
+        } else {
+            file =new File("src/img/female.png");
+        }
         Image image=new Image(file.toURI().toString());
         imagineProfil.setImage(image);
+        numeElev.setText(elev.getNume());
+        prenumeElev.setText(elev.getPrenume());
+        varstaElev.setText(Integer.toString(elev.getVarsta()));
+        genElev.setText(elev.getGen());
+        liceuElev.setText(elev.getLiceu().getNume());
+        clasaElev.setText(Integer.toString(elev.getVarsta()));
+        numeParinte.setText(Client.parinte.getNume());
+        prenumeParinte.setText(Client.parinte.getPrenume());
+        varstaParinte.setText(Integer.toString(Client.parinte.getVarsta()));
+        genParinte.setText(Client.parinte.getGen());
+        parinteJudet.setText(elev.getLiceu().getJudet());
+        parinteLocalitate.setText(elev.getLiceu().getJudet());
+        String[] adresa = Client.parinte.getAdresa().split(">>");
+        parinteStrada.setText(adresa[0]);
+        if(adresa[1].compareTo("-") == 0){
+            parinteBloc.setText("-");
+            parinteScara.setText("-");
+            parinteNumarLocuinta.setText(adresa[3]);
+        } else {
+            parinteBloc.setText(adresa[1]);
+            parinteScara.setText(adresa[2]);
+            parinteNumarLocuinta.setText(adresa[3]);
+        }
+        parinteNumarTelefon.setText(Client.parinte.getNr_telefon());
+        parinteEmail.setText(Client.parinte.getEmail());
     }
 }

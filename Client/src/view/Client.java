@@ -1,6 +1,8 @@
 package view;
 
+import controller.ParinteController;
 import controller.ProfesorController;
+import entity.Parinte;
 import entity.Profesor;
 import javafx.application.Application;
 
@@ -31,6 +33,7 @@ public class Client extends Application implements Initializable {
 
     public static ButtonAction action=new ButtonAction();
     public static entity.Profesor profesor = new Profesor();
+    public static entity.Parinte parinte = new Parinte();
 
     public static void main(String[] args){
         launch(args);
@@ -50,15 +53,9 @@ public class Client extends Application implements Initializable {
 
     public void pressButton(ActionEvent event){
 
-            //userName.clear();
-            //password.clear();
-        String username;
-        String passWord;
-
         if(userName.getText().startsWith("P.")) {
             ProfesorController profesorController = new ProfesorController();
             Client.profesor = profesorController.login(userName.getText(),password.getText());
-            System.out.println(profesor.toString());
             if(profesor.getId() > 0){
                 createSecondStage("profilProfesor.fxml");
                 ((Node) event.getSource()).getScene().getWindow().hide();
@@ -66,10 +63,16 @@ public class Client extends Application implements Initializable {
             } else {
                 invalidLoginMsg.setVisible(true);
             }
-//            createSecondStage("Student.fxml");
-//            ((Node) event.getSource()).getScene().getWindow().hide();
-//            System.out.printf("Text field: %b%n", invalidLoginMsg);
-//            action.setTypeAccount("Student");
+        } else if(userName.getText().startsWith("Pa.")){
+            ParinteController parinteController = new ParinteController();
+            Client.parinte= parinteController.login(userName.getText(),password.getText());
+            if(parinte.getId() > 0){
+                createSecondStage("Parinte.fxml");
+                ((Node) event.getSource()).getScene().getWindow().hide();
+                action.setTypeAccount("Parinte");
+            } else {
+                invalidLoginMsg.setVisible(true);
+            }
         }
         else if(userName.getText().compareTo("user1")==0&&password.getText().compareTo("pass")==0){
 //            createSecondStage("Parinte.fxml");

@@ -29,7 +29,9 @@ public class ParinteController {
             parinte.setEmail(parent[7]);
             parinte.setElev(new ElevController().getById(Integer.parseInt(parent[8])));
         } catch (SQLException e){
-            System.out.println("Exceptie: " + e);
+            return parinte;
+        } catch (NumberFormatException f){
+            return parinte;
         }
         return parinte;
     }
