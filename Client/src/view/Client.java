@@ -1,7 +1,9 @@
 package view;
 
+import controller.ElevController;
 import controller.ParinteController;
 import controller.ProfesorController;
+import entity.Elev;
 import entity.Parinte;
 import entity.Profesor;
 import javafx.application.Application;
@@ -34,6 +36,7 @@ public class Client extends Application implements Initializable {
     public static ButtonAction action=new ButtonAction();
     public static entity.Profesor profesor = new Profesor();
     public static entity.Parinte parinte = new Parinte();
+    public static entity.Elev elev = new Elev();
 
     public static void main(String[] args){
         launch(args);
@@ -73,18 +76,17 @@ public class Client extends Application implements Initializable {
             } else {
                 invalidLoginMsg.setVisible(true);
             }
-        }
-        else if(userName.getText().compareTo("user1")==0&&password.getText().compareTo("pass")==0){
-//            createSecondStage("Parinte.fxml");
-//            ((Node) event.getSource()).getScene().getWindow().hide();
-//            action.setTypeAccount("Parinte");
-        }
-        else if(userName.getText().compareTo("user2")==0&&password.getText().compareTo("pass")==0){
-//            createSecondStage("profilProfesor.fxml");
-//            ((Node) event.getSource()).getScene().getWindow().hide();
-//            action.setTypeAccount("Profesor");
-        }
-        else
+        } else if(userName.getText().startsWith("E.")){
+            ElevController elevController = new ElevController();
+            Client.elev = elevController.login(userName.getText(),password.getText());
+            if(elev.getId() > 0){
+                createSecondStage("Student.fxml");
+                ((Node) event.getSource()).getScene().getWindow().hide();
+                action.setTypeAccount("Student");
+            } else {
+                invalidLoginMsg.setVisible(true);
+            }
+        } else
             invalidLoginMsg.setVisible(true);
     }
 

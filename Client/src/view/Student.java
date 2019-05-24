@@ -10,6 +10,8 @@ import javafx.scene.image.ImageView;
 
 
 import javafx.event.ActionEvent;
+import oracle.ons.Cli;
+
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -81,13 +83,44 @@ public class Student implements Initializable {
     //DE IMPLEMENTAT METODELE DE INITIALIZARE!!!!
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        firstName.setText("Miron");
-        secondName.setText("Andrei Daniel");
-        numeLiceu.setText("sasdsadasd");
-        File file=new File("src/img/male.png");
-        Image image=new Image(file.toURI().toString());
-        imagineProfil.setImage(image);
-        System.out.println(numeLiceu.getLayoutX());
-        numeLiceu.setLayoutX(numeLiceu.getLayoutX()-numeLiceu.getText().length()*4.5);
+        firstName.setText(Client.elev.getNume());
+        secondName.setText(Client.elev.getPrenume());
+        studentAge.setText(Integer.toString(Client.elev.getVarsta()));
+        studentGender.setText(Client.elev.getGen());
+        titluLiceu.setText(Client.elev.getLiceu().getTitlu());
+        numeLiceu.setText(Client.elev.getLiceu().getNume());
+        orasLiceu.setText(Client.elev.getLiceu().getJudet());
+        anClasa.setText(Client.elev.getClasa());
+        if(Client.elev.getProfil().compareTo("real") == 0){
+            profilStudent.setLayoutX(profilStudent.getLayoutX()+10);
+            profilStudent.setText("Real");
+        } else {
+            profilStudent.setText("Uman");
+        }
+        studentJudet.setText(Client.elev.getLiceu().getJudet());
+        studentLocalitate.setText(studentJudet.getText());
+        String[] adresa = Client.elev.getAdresa().split(">>");
+        studentStrada.setText(adresa[0]);
+        if(adresa[1].compareTo("-") == 0){
+            studentBloc.setText("-");
+            studentScara.setText("-");
+            studentNumarLocuinta.setText(adresa[3]);
+        } else {
+            studentBloc.setText(adresa[1]);
+            studentScara.setText(adresa[2]);
+            studentNumarLocuinta.setText(adresa[3]);
+        }
+        studentNumarTelefon.setText(Client.elev.getNr_telefon());
+        studentEmail.setText(Client.elev.getEmail());
+        File file;
+        if(Client.elev.getGen().compareTo("Masculin") == 0){
+            file =new File("src/img/male.png");
+            Image image=new Image(file.toURI().toString());
+            imagineProfil.setImage(image);
+        } else {
+            file =new File("src/img/female.png");
+            Image image=new Image(file.toURI().toString());
+            imagineProfil.setImage(image);
+        }
     }
 }

@@ -100,7 +100,7 @@ public class Parinte implements Initializable {
         varstaElev.setText(Integer.toString(elev.getVarsta()));
         genElev.setText(elev.getGen());
         liceuElev.setText(elev.getLiceu().getNume());
-        clasaElev.setText(Integer.toString(elev.getVarsta()));
+        clasaElev.setText(elev.getClasa());
         numeParinte.setText(Client.parinte.getNume());
         prenumeParinte.setText(Client.parinte.getPrenume());
         varstaParinte.setText(Integer.toString(Client.parinte.getVarsta()));
