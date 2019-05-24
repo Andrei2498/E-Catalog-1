@@ -18,7 +18,7 @@ public class LiceuController {
             resultat.setNume(resultSet.getString(3));
             resultat.setJudet(resultSet.getString(4));
         } catch (SQLException e){
-            System.out.println("Exceptie: " + e);
+            System.out.println("Exceptie Liceu: " + e);
         }
         return resultat;
     }

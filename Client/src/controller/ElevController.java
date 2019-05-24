@@ -28,11 +28,13 @@ public class ElevController {
             rezult.setNr_telefon(elev[6]);
             rezult.setEmail(elev[7]);
             LiceuController liceuController = new LiceuController();
-            rezult.setLiceu(liceuController.infoLiceu(rezult.getId()));
+            rezult.setLiceu(liceuController.infoLiceu(Integer.parseInt(elev[8])));
             rezult.setClasa(elev[9]);
             rezult.setProfil(elev[10]);
+            System.out.println(rezult.getLiceu().toString());
         } catch (SQLException e){
-            System.out.println("Eroare:  " + e);
+//            System.out.println("Eroare:  " + e);
+            return rezult;
         }
         return rezult;
     }

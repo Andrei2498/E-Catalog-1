@@ -7,17 +7,15 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.text.Text;
 import javafx.scene.image.ImageView;
 
-
-
 import javafx.event.ActionEvent;
-import oracle.ons.Cli;
 
 import java.io.File;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class Student implements Initializable {
-
+    // 724YOL265WUV
+    // E.agae.ana
     /*----Date personale despre student----*/
     @FXML
     private Text firstName;
