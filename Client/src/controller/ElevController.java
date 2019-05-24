@@ -31,7 +31,6 @@ public class ElevController {
             rezult.setLiceu(liceuController.infoLiceu(Integer.parseInt(elev[8])));
             rezult.setClasa(elev[9]);
             rezult.setProfil(elev[10]);
-            System.out.println(rezult.getLiceu().toString());
         } catch (SQLException e){
 //            System.out.println("Eroare:  " + e);
             return rezult;

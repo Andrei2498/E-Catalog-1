@@ -18,8 +18,6 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.stage.Stage;
-import view.AfisareNotaSimpla;
-import view.AfisareNote;
 
 import java.io.IOException;
 import java.net.URL;

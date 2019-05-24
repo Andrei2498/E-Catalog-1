@@ -4,42 +4,45 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Nota {
-    private int idElev;
-    private int idMaterie;
-    private int idProfesor;
+//    private int idElev;
+//    private int idMaterie;
+//    private int idProfesor;
+    private Elev elev;
+    private Materie materie;
+    private Profesor profesor;
     private int nota;
     private LocalDate dataNotare;
 
-    public Nota(int idElev, int idMaterie, int idProfesor, int nota, LocalDate dataNotare) {
-        this.idElev = idElev;
-        this.idMaterie = idMaterie;
-        this.idProfesor = idProfesor;
+    public Nota(Elev elev, Materie materie, Profesor profesor, int nota, LocalDate dataNotare) {
+        this.elev = elev;
+        this.materie = materie;
+        this.profesor = profesor;
         this.nota = nota;
         this.dataNotare = dataNotare;
     }
 
-    public int getIdElev() {
-        return idElev;
+    public Elev getElev() {
+        return elev;
     }
 
-    public void setIdElev(int idElev) {
-        this.idElev = idElev;
+    public void setElev(Elev elev) {
+        this.elev = elev;
     }
 
-    public int getIdMaterie() {
-        return idMaterie;
+    public Materie getMaterie() {
+        return materie;
     }
 
-    public void setIdMaterie(int idMaterie) {
-        this.idMaterie = idMaterie;
+    public void setMaterie(Materie materie) {
+        this.materie = materie;
     }
 
-    public int getIdProfesor() {
-        return idProfesor;
+    public Profesor getProfesor() {
+        return profesor;
     }
 
-    public void setIdProfesor(int idProfesor) {
-        this.idProfesor = idProfesor;
+    public void setProfesor(Profesor profesor) {
+        this.profesor = profesor;
     }
 
     public int getNota() {
@@ -59,30 +62,30 @@ public class Nota {
     }
 
     @Override
-    public String toString() {
-        return "Teze{" +
-                "idElev=" + idElev +
-                ", idMaterie=" + idMaterie +
-                ", idProfesor=" + idProfesor +
-                ", nota=" + nota +
-                ", dataNotare=" + dataNotare +
-                '}';
-    }
-
-    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (!(o instanceof Nota)) return false;
         Nota nota1 = (Nota) o;
-        return idElev == nota1.idElev &&
-                idMaterie == nota1.idMaterie &&
-                idProfesor == nota1.idProfesor &&
-                nota == nota1.nota &&
-                Objects.equals(dataNotare, nota1.dataNotare);
+        return nota == nota1.nota &&
+                elev.equals(nota1.elev) &&
+                materie.equals(nota1.materie) &&
+                profesor.equals(nota1.profesor) &&
+                dataNotare.equals(nota1.dataNotare);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(idElev, idMaterie, idProfesor, nota, dataNotare);
+        return Objects.hash(elev, materie, profesor, nota, dataNotare);
+    }
+
+    @Override
+    public String toString() {
+        return "Nota{" +
+                "elev=" + elev +
+                ", materie=" + materie +
+                ", profesor=" + profesor +
+                ", nota=" + nota +
+                ", dataNotare=" + dataNotare +
+                '}';
     }
 }
