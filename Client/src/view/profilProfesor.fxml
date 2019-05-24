@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="rootPane" maxHeight="780.0" maxWidth="1320.0" minHeight="740.0" minWidth="1280.0" styleClass="background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Profesor">
+<AnchorPane fx:id="rootPane" maxHeight="780.0" maxWidth="1320.0" minHeight="740.0" minWidth="1280.0" styleClass="background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.Profesor">
    <children>
       <MenuBar layoutY="-4.0" prefHeight="37.0" prefWidth="1341.0">
          <menus>
@@ -251,7 +251,7 @@
             <Font name="System Bold" size="28.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="188.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Materie">
+      <Text fx:id="materieId" fill="WHITE" layoutX="188.0" layoutY="688.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Materie">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
