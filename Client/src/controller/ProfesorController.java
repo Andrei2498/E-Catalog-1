@@ -50,8 +50,10 @@ public class ProfesorController {
             }
         } catch (SQLException e){
             System.out.println("Exceptie: " + e);
+            return elevs;
+        } catch (NumberFormatException f){
+            return elevs;
         }
-
         return elevs;
     }
 
@@ -76,13 +78,3 @@ public class ProfesorController {
         return profesor;
     }
 }
-//    private int id;
-//    private String nume;
-//    private String prenume;
-//    private String gen;
-//    private int varsta;
-//    private String adresa;
-//    private String nr_telefon;
-//    private String email;
-//    private Materie materie;
-//    private Liceu liceu;

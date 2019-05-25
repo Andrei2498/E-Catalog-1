@@ -1,5 +1,7 @@
 package view;
 
+import controller.ProfesorController;
+import entity.Elev;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -10,6 +12,8 @@ import javafx.scene.text.Text;
 
 import java.io.File;
 import java.net.URL;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class Profesor implements Initializable {
@@ -61,6 +65,16 @@ public class Profesor implements Initializable {
     private AnchorPane rootPane;
     @FXML
     private ImageView imagineProfil;
+
+    private List<Elev> elevs = new LinkedList<>();
+
+    public List<Elev> getElevs() {
+        return elevs;
+    }
+
+    public void setElevs(List<Elev> elevs) {
+        this.elevs = elevs;
+    }
 
     public void buttonAbsentePressed(ActionEvent event){
         Client.action.setPane(rootPane);
@@ -119,7 +133,6 @@ public class Profesor implements Initializable {
         studentEmail.setText(Client.profesor.getEmail());
         String string = Client.profesor.getMaterie().getNume();
         materieId.setText(string);
-//        System.out.println(Client.profesor.getMaterie().toString());
         File file;
         if(studentGender.getText().compareTo("Masculin") == 0){
             file=new File("src/img/male.png");
@@ -128,5 +141,6 @@ public class Profesor implements Initializable {
         }
         Image image=new Image(file.toURI().toString());
         imagineProfil.setImage(image);
+        Client.elevs = new ProfesorController().getAllMyElevi(Client.profesor);
     }
 }

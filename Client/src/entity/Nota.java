@@ -4,14 +4,14 @@ import java.time.LocalDate;
 import java.util.Objects;
 
 public class Nota {
-//    private int idElev;
-//    private int idMaterie;
-//    private int idProfesor;
     private Elev elev;
     private Materie materie;
     private Profesor profesor;
     private int nota;
     private LocalDate dataNotare;
+
+    public Nota() {
+    }
 
     public Nota(Elev elev, Materie materie, Profesor profesor, int nota, LocalDate dataNotare) {
         this.elev = elev;

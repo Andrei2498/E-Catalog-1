@@ -1,5 +1,8 @@
 package view;
 
+import controller.NotaController;
+import entity.Elev;
+import entity.Nota;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -15,7 +18,6 @@ import javafx.scene.control.TableRow;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.image.Image;
 import javafx.scene.input.MouseButton;
 import javafx.stage.Stage;
 
@@ -80,16 +82,24 @@ public class ProfesorNote implements Initializable {
 
     private ObservableList<AfisareNotaSimpla> getNotaSimpla(){
         ObservableList<AfisareNotaSimpla> note= FXCollections.observableArrayList();
-        note.add(new AfisareNotaSimpla(1,"Miron","Andrei"));
-        note.add(new AfisareNotaSimpla(2,"Pirlog","Marcel"));
-        note.add(new AfisareNotaSimpla(3,"adasd","3sdfsdfsdf"));
+//        note.add(new AfisareNotaSimpla(1,"Miron","Andrei"));
+//        note.add(new AfisareNotaSimpla(2,"Pirlog","Marcel"));
+//        note.add(new AfisareNotaSimpla(3,"adasd","3sdfsdfsdf"));
+        for (Elev elev : Client.elevs) {
+            note.add(new AfisareNotaSimpla(elev.getId(),elev.getNume(),elev.getPrenume()));
+        }
         return note;
     }
 
     private ObservableList<AfisareNote> getNote(){
         ObservableList<AfisareNote> note=FXCollections.observableArrayList();
+        NotaController notaController = new NotaController();
         note.add(new AfisareNote("Miron","Andrei",6,LocalDate.of(2019,02,17)));
         note.add(new AfisareNote("Pirlog","Marcel",5,LocalDate.of(2019,07,15)));
+//        for (Nota nota: notaController.getNota(1,65)) {
+//            note.add(new AfisareNote(nota.getElev().getNume(),nota.getElev().getPrenume(),
+//                        nota.getNota(),nota.getDataNotare()));
+//        }
         return note;
 
     }

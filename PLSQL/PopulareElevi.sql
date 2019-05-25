@@ -107,7 +107,7 @@ declare
 begin 
   for v_indexL in 1..25 loop
     
-    for v_indexE in 1..2000 loop
+    for v_indexE in 1..200 loop
       
       v_clasa := ceil(DBMS_RANDOM.VALUE(8,12));
       v_clasa_final := v_clasa || chr(ceil(dbms_random.value(64,71)));
@@ -183,7 +183,7 @@ begin
       v_password := '';
       v_email := '';
     end loop;
-    temp := temp + 1999;
+    temp := temp + 199;
   end loop;
 end;
 /

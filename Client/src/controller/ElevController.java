@@ -53,10 +53,11 @@ public class ElevController {
             callableStatement.setInt(2,idElev);
             callableStatement.execute();
             sirRezultat = callableStatement.getString(1);
-            System.out.println(sirRezultat);
+//            System.out.println(sirRezultat);
             String[] lista = sirRezultat.split("_");
             for (String string : lista) {
-                System.out.println(new ProfesorController().getProfesorById(Integer.parseInt(string)));
+                materies.add(new ProfesorController().getProfesorById(Integer.parseInt(string)));
+//                System.out.println(new ProfesorController().getProfesorById(Integer.parseInt(string)));
             }
         } catch (SQLException e){
             return materies;

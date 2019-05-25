@@ -10,6 +10,8 @@ import javafx.application.Application;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -19,7 +21,6 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
-import javafx.scene.image.Image;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import javafx.scene.control.TextField;
@@ -33,14 +34,18 @@ public class Client extends Application implements Initializable {
     @FXML
     private Text invalidLoginMsg;
 
-    public static ButtonAction action=new ButtonAction();
+    public static ButtonAction action = new ButtonAction();
+    // OBIECTUL PROFESOR CURENT LOGAT
     public static entity.Profesor profesor = new Profesor();
+    // OBIECTUL PARINTE CURENT LOGAT
     public static entity.Parinte parinte = new Parinte();
+    // OBIECTUL ELEV CURENT LOGAT
     public static entity.Elev elev = new Elev();
+    // LISTA ELEVILOR UNOR PROFESORI
+    public static List<entity.Elev> elevs = new LinkedList<>();
 
     public static void main(String[] args){
         launch(args);
-
     }
 
     @Override
