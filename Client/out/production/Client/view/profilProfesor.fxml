@@ -27,7 +27,6 @@
                         <MenuItem fx:id="geografie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Geografie" />
                         <MenuItem fx:id="logica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Logica" />
                         <MenuItem fx:id="filozofie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Filozofie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Logica" />
                         <MenuItem fx:id="limbaFranceza" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Franceza" />
                         <MenuItem fx:id="limbaEngleza" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Engleza" />
                         <MenuItem fx:id="pshihologie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Psihologie" />
