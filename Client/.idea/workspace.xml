@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6aff7fd5-dec5-4129-aab9-a3646d90eda4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/controller/ElevController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ElevController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/ProfesorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/ProfesorController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/ButtonAction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ButtonAction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Profesor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/ProfesorNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ProfesorNote.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/profesorNote.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/profesorNote.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/profilProfesor.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/profilProfesor.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -96,8 +88,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/view/ButtonAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="737">
-              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+            <state relative-caret-position="703">
+              <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -191,18 +183,18 @@
         <option value="$PROJECT_DIR$/src/controller/ProfesorController.java" />
         <option value="$PROJECT_DIR$/src/view/Student.java" />
         <option value="$PROJECT_DIR$/src/view/Client.java" />
-        <option value="$PROJECT_DIR$/src/view/ButtonAction.java" />
         <option value="$PROJECT_DIR$/src/view/ProfesorNote.java" />
         <option value="$PROJECT_DIR$/src/view/profesorNote.fxml" />
         <option value="$PROJECT_DIR$/src/view/profilProfesor.fxml" />
         <option value="$PROJECT_DIR$/src/view/Profesor.java" />
+        <option value="$PROJECT_DIR$/src/view/ButtonAction.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-12" />
     <option name="y" value="-2" />
-    <option name="width" value="1022" />
+    <option name="width" value="1019" />
     <option name="height" value="1034" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -354,7 +346,7 @@
       <workItem from="1558696231838" duration="11403000" />
       <workItem from="1558743975093" duration="823000" />
       <workItem from="1558760654621" duration="102000" />
-      <workItem from="1558777965682" duration="6939000" />
+      <workItem from="1558777965682" duration="7269000" />
     </task>
     <task id="LOCAL-00001" summary="comit">
       <created>1558649520345</created>
@@ -367,13 +359,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="213013000" />
+    <option name="totallyTimeSpent" value="213343000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-12" y="-2" width="1022" height="1034" extended-state="0" />
+    <frame x="-12" y="-2" width="1019" height="1034" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24532224" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24608968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -918,8 +910,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/ButtonAction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="737">
-          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
+        <state relative-caret-position="703">
+          <caret line="131" column="9" selection-start-line="131" selection-start-column="9" selection-end-line="131" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

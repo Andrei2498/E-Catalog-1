@@ -125,10 +125,10 @@ public class ButtonAction {
                     root=FXMLLoader.load(getClass().getResource("studentStatistici.fxml"));
                     rootPane.getChildren().add(root);
                     break;
-
             }
         }
-        catch (IOException er){er.printStackTrace();}
-
+        catch (IOException er){
+            er.printStackTrace();
+        }
     }
 }
