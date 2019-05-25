@@ -18,7 +18,7 @@
          <menus>
             <Menu mnemonicParsing="false" text="Profil">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonProfilePressed" text="Show" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Note">
@@ -65,12 +65,12 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Observatii">
                <items>
-                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonObservatiiPressed" text="About" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Statistici">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonStatisticiPressed" text="Show" />
                </items>
             </Menu>
          </menus>
@@ -82,8 +82,8 @@
       <TableView fx:id="tabelaAdaugareAbsente" layoutX="26.0" layoutY="109.0" prefHeight="476.0" prefWidth="587.0">
          <columns>
             <TableColumn fx:id="coloanaID" prefWidth="75.0" text="ID_Elev" />
-            <TableColumn fx:id="coloanaNume" prefWidth="256.0" text="Nume" />
-            <TableColumn fx:id="coloanaPrenume" prefWidth="255.0" text="Prenume" />
+            <TableColumn fx:id="coloanaAbsentaNume" prefWidth="256.0" text="Nume" />
+            <TableColumn fx:id="coloanaAbsentaPrenume" prefWidth="255.0" text="Prenume" />
          </columns>
       </TableView>
       <Text fill="WHITE" layoutX="152.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tabela adaugare absente:">
