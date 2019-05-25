@@ -80,6 +80,7 @@ public class Client extends Application implements Initializable {
             ElevController elevController = new ElevController();
             Client.elev = elevController.login(userName.getText(),password.getText());
             if(elev.getId() > 0){
+                invalidLoginMsg.setVisible(false);
                 createSecondStage("Student.fxml");
                 ((Node) event.getSource()).getScene().getWindow().hide();
                 action.setTypeAccount("Student");

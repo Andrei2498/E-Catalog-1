@@ -68,8 +68,8 @@ public class ProfesorController {
                 profesor.setAdresa(resultSet.getString(6));
                 profesor.setNr_telefon(resultSet.getString(7));
                 profesor.setEmail(resultSet.getString(8));
-                profesor.setMaterie(new MaterieController().getMaterieById(resultSet.getInt(9)));
-                profesor.setLiceu(new LiceuController().infoLiceu(resultSet.getInt(10)));
+                profesor.setMaterie(new MaterieController().getMaterieById(resultSet.getInt(10)));
+                profesor.setLiceu(new LiceuController().infoLiceu(resultSet.getInt(9)));
         } catch (SQLException e){
             return profesor;
         }

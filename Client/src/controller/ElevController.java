@@ -2,10 +2,7 @@ package controller;
 
 import connection.CreateConnection;
 import entity.Elev;
-import entity.Materie;
 import entity.Profesor;
-//import oracle.ucp.util.Pair;
-import javafx.util.Pair;
 
 import java.sql.*;
 import java.util.LinkedList;
@@ -39,14 +36,33 @@ public class ElevController {
         } catch (SQLException e){
 //            System.out.println("Eroare:  " + e);
             return rezult;
+        } catch (NumberFormatException f){
+            return rezult;
         }
         return rezult;
     }
 
     public List<Profesor> getAllTeachers(int idElev){
         List<Profesor> materies = new LinkedList<>();
-
-
+        String function = "{ ? = call NOTEOUT.LISTPROFESORI(?) }";
+        CallableStatement callableStatement = null;
+        String sirRezultat = new String();
+        try{
+            callableStatement = CreateConnection.connection.prepareCall(function);
+            callableStatement.registerOutParameter(1,Types.VARCHAR);
+            callableStatement.setInt(2,idElev);
+            callableStatement.execute();
+            sirRezultat = callableStatement.getString(1);
+            System.out.println(sirRezultat);
+            String[] lista = sirRezultat.split("_");
+            for (String string : lista) {
+                System.out.println(new ProfesorController().getProfesorById(Integer.parseInt(string)));
+            }
+        } catch (SQLException e){
+            return materies;
+        } catch (NumberFormatException f){
+            return materies;
+        }
         return materies;
     }
 

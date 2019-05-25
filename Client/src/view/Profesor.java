@@ -62,7 +62,7 @@ public class Profesor implements Initializable {
     @FXML
     private ImageView imagineProfil;
 
-    public void buttonAbsentePressed(javafx.event.ActionEvent event){
+    public void buttonAbsentePressed(ActionEvent event){
         Client.action.setPane(rootPane);
         Client.action.setEvent(event);
         Client.action.setStage("Absente");
@@ -72,6 +72,18 @@ public class Profesor implements Initializable {
         Client.action.setPane(rootPane);
         Client.action.setEvent(event);
         Client.action.setStage("Note");
+    }
+
+    public void buttonStatisticiPressed(ActionEvent event){
+        Client.action.setPane(rootPane);
+        Client.action.setEvent(event);
+        Client.action.setStage("Statistici");
+    }
+
+    public void buttonObservatiiPressed(ActionEvent event){
+        Client.action.setPane(rootPane);
+        Client.action.setEvent(event);
+        Client.action.setStage("Observatii");
     }
 
     @Override
@@ -105,7 +117,9 @@ public class Profesor implements Initializable {
         }
         studentNumarTelefon.setText(Client.profesor.getNr_telefon());
         studentEmail.setText(Client.profesor.getEmail());
-        materieId.setText(Client.profesor.getMaterie().getNume());
+        String string = Client.profesor.getMaterie().getNume();
+        materieId.setText(string);
+//        System.out.println(Client.profesor.getMaterie().toString());
         File file;
         if(studentGender.getText().compareTo("Masculin") == 0){
             file=new File("src/img/male.png");

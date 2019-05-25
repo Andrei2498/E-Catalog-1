@@ -68,6 +68,16 @@ public class ProfesorNote implements Initializable {
         Client.action.setStage("Statistici");
     }
 
+    public void buttonProfilePressed(ActionEvent event){
+        Client.action.setEvent(event);
+        Client.action.setStage("Profile");
+    }
+
+    public void buttonObservatiiPressed(ActionEvent event){
+        Client.action.setEvent(event);
+        Client.action.setStage("Observatii");
+    }
+
     private ObservableList<AfisareNotaSimpla> getNotaSimpla(){
         ObservableList<AfisareNotaSimpla> note= FXCollections.observableArrayList();
         note.add(new AfisareNotaSimpla(1,"Miron","Andrei"));
@@ -93,7 +103,7 @@ public class ProfesorNote implements Initializable {
             primaryStage.resizableProperty().setValue(Boolean.FALSE);
             Scene scene=new Scene(root);
             primaryStage.setScene(scene);
-            primaryStage.getIcons().add(new Image("file:///C:/Users/Andrei/Desktop/JavaIcon.jpg"));
+//            primaryStage.getIcons().add(new Image("file:///C:/Users/Andrei/Desktop/JavaIcon.jpg"));
             primaryStage.show();
         }
         catch (IOException er){er.printStackTrace();}

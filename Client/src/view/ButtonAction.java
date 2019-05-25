@@ -41,8 +41,6 @@ public class ButtonAction {
                 break;
         }
 
-
-
         System.out.println(((MenuItem)event.getSource()).getText()); //asa luam numele de la event, FOARTE IMPORTANT
 
     }
@@ -96,6 +94,12 @@ public class ButtonAction {
         catch (IOException er){er.printStackTrace();}
     }
 
+    public void setElevSelectat(Integer idElev,String numeElev,String prenumeElev){
+        this.idElev=idElev;
+        this.numeElev=numeElev;
+        this.prenumeElev=prenumeElev;
+    }
+
     private void setProfesorStage(String FXMLName){
         try {
             Parent root;
@@ -112,16 +116,19 @@ public class ButtonAction {
                     root = FXMLLoader.load(getClass().getResource("profilProfesor.fxml"));
                     rootPane.getChildren().add(root);
                     break;
+                case "Observatii":
+                    root = FXMLLoader.load(getClass().getResource("profesorObservatii.fxml"));
+                    rootPane.getChildren().add(root);
+                    break;
+                case "Statistici":
+                    // DE MODIFICAT DACA SE CONSTRUIESTE XML PENTRU STATISTICI PROFESOR
+                    root=FXMLLoader.load(getClass().getResource("studentStatistici.fxml"));
+                    rootPane.getChildren().add(root);
+                    break;
 
             }
         }
         catch (IOException er){er.printStackTrace();}
 
-    }
-
-    public void setElevSelectat(Integer idElev,String numeElev,String prenumeElev){
-        this.idElev=idElev;
-        this.numeElev=numeElev;
-        this.prenumeElev=prenumeElev;
     }
 }

@@ -17,11 +17,7 @@
    <children>
       <MenuBar layoutY="-4.0" prefHeight="37.0" prefWidth="1341.0">
          <menus>
-            <Menu mnemonicParsing="false" text="Profil">
-               <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
-               </items>
-            </Menu>
+            <Menu mnemonicParsing="false" text="Profil" />
             <Menu mnemonicParsing="false" text="Note">
                <items>
                   <Menu mnemonicParsing="false" text="Materii Umaniste">
@@ -66,12 +62,12 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Observatii">
                <items>
-                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonObservatiiPressed" text="Show" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Statistici">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonStatisticiPressed" text="Show" />
                </items>
             </Menu>
          </menus>

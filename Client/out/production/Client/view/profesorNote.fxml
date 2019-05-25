@@ -18,7 +18,7 @@
          <menus>
             <Menu mnemonicParsing="false" text="Profil">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonProfilePressed" text="Show" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Note">
@@ -65,12 +65,12 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Observatii">
                <items>
-                  <MenuItem mnemonicParsing="false" text="About" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonObservatiiPressed" text="Show" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Statistici">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Action 1" />
+                  <MenuItem mnemonicParsing="false" onAction="#buttonStatisticiPressed" text="Show" />
                </items>
             </Menu>
          </menus>
@@ -80,11 +80,11 @@
       </MenuBar>
       <TextField fx:id="filterFieldAdaugare" layoutX="192.0" layoutY="668.0" prefHeight="37.0" prefWidth="215.0" promptText="Search" />
       <TableView fx:id="tabelaAdaugareNote" layoutX="6.0" layoutY="118.0" prefHeight="476.0" prefWidth="587.0">
-        <columns>
+         <columns>
             <TableColumn fx:id="coloanaID" prefWidth="75.0" text="ID_Elev" />
-          <TableColumn fx:id="coloanaNume" prefWidth="256.0" text="Nume" />
-          <TableColumn fx:id="coloanaPrenume" prefWidth="255.0" text="Prenume" />
-        </columns>
+            <TableColumn fx:id="coloanaNume" prefWidth="256.0" text="Nume" />
+            <TableColumn fx:id="coloanaPrenume" prefWidth="255.0" text="Prenume" />
+         </columns>
       </TableView>
       <TableView fx:id="tabelaVizionareNote" layoutX="704.0" layoutY="118.0" prefHeight="476.0" prefWidth="609.0">
          <columns>
