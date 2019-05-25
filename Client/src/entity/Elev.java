@@ -1,5 +1,6 @@
 package entity;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Elev {
@@ -14,6 +15,7 @@ public class Elev {
     private Liceu liceu;
     private String clasa;
     private String profil;
+    private List<Profesor> profesors;
 
     public  Elev(){
     }
@@ -30,6 +32,14 @@ public class Elev {
         this.liceu = liceu;
         this.clasa = clasa;
         this.profil = profil;
+    }
+
+    public List<Profesor> getProfesors() {
+        return profesors;
+    }
+
+    public void setProfesors(List<Profesor> profesors) {
+        this.profesors = profesors;
     }
 
     public int getId() {
@@ -135,12 +145,13 @@ public class Elev {
                 Objects.equals(email, elev.email) &&
                 Objects.equals(liceu, elev.liceu) &&
                 Objects.equals(clasa, elev.clasa) &&
-                Objects.equals(profil, elev.profil);
+                Objects.equals(profil, elev.profil) &&
+                Objects.equals(profesors, elev.profesors);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, nume, prenume, gen, varsta, adresa, nr_telefon, email, liceu, clasa, profil);
+        return Objects.hash(id, nume, prenume, gen, varsta, adresa, nr_telefon, email, liceu, clasa, profil, profesors);
     }
 
     @Override
@@ -157,6 +168,7 @@ public class Elev {
                 ", liceu=" + liceu +
                 ", clasa='" + clasa + '\'' +
                 ", profil='" + profil + '\'' +
-                "}\n";
+                ", profesors=" + profesors +
+                '}';
     }
 }

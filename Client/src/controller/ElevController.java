@@ -2,9 +2,14 @@ package controller;
 
 import connection.CreateConnection;
 import entity.Elev;
-import entity.Liceu;
+import entity.Materie;
+import entity.Profesor;
+//import oracle.ucp.util.Pair;
+import javafx.util.Pair;
 
 import java.sql.*;
+import java.util.LinkedList;
+import java.util.List;
 
 public class ElevController {
 
@@ -36,6 +41,13 @@ public class ElevController {
             return rezult;
         }
         return rezult;
+    }
+
+    public List<Profesor> getAllTeachers(int idElev){
+        List<Profesor> materies = new LinkedList<>();
+
+
+        return materies;
     }
 
     public String medieGenerala(int idElev) {

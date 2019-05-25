@@ -1,5 +1,6 @@
 package view;
 
+import controller.ElevController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.image.Image;
@@ -81,6 +82,8 @@ public class Student implements Initializable {
     //DE IMPLEMENTAT METODELE DE INITIALIZARE!!!!
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+//        Client.elev.setMateries(new ElevController().getAllMateries(Client.elev.getId()));
+//        System.out.println(Client.elev.getMateries());
         firstName.setText(Client.elev.getNume());
         secondName.setText(Client.elev.getPrenume());
         studentAge.setText(Integer.toString(Client.elev.getVarsta()));

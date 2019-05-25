@@ -54,6 +54,27 @@ public class ProfesorController {
 
         return elevs;
     }
+
+    public Profesor getProfesorById(int idProfesor){
+        Profesor profesor = new Profesor();
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select * from profesori where id = " + idProfesor)){
+                resultSet.next();
+                profesor.setId(resultSet.getInt(1));
+                profesor.setNume(resultSet.getString(2));
+                profesor.setPrenume(resultSet.getString(3));
+                profesor.setGen(resultSet.getString(4));
+                profesor.setVarsta(resultSet.getInt(5));
+                profesor.setAdresa(resultSet.getString(6));
+                profesor.setNr_telefon(resultSet.getString(7));
+                profesor.setEmail(resultSet.getString(8));
+                profesor.setMaterie(new MaterieController().getMaterieById(resultSet.getInt(9)));
+                profesor.setLiceu(new LiceuController().infoLiceu(resultSet.getInt(10)));
+        } catch (SQLException e){
+            return profesor;
+        }
+        return profesor;
+    }
 }
 //    private int id;
 //    private String nume;
