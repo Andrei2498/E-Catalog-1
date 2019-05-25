@@ -24,6 +24,8 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class ProfesorNote implements Initializable {
@@ -94,14 +96,12 @@ public class ProfesorNote implements Initializable {
     private ObservableList<AfisareNote> getNote(){
         ObservableList<AfisareNote> note=FXCollections.observableArrayList();
         NotaController notaController = new NotaController();
-        note.add(new AfisareNote("Miron","Andrei",6,LocalDate.of(2019,02,17)));
-        note.add(new AfisareNote("Pirlog","Marcel",5,LocalDate.of(2019,07,15)));
-//        for (Nota nota: notaController.getNota(1,65)) {
-//            note.add(new AfisareNote(nota.getElev().getNume(),nota.getElev().getPrenume(),
-//                        nota.getNota(),nota.getDataNotare()));
-//        }
+        List<Nota> notes = notaController.getNota(1,81);
+        for (Nota nota: notes) {
+            note.add(new AfisareNote(nota.getElev().getNume(),nota.getElev().getPrenume(),
+                        nota.getNota(),nota.getDataNotare()));
+        }
         return note;
-
     }
 
     private void addNota(int ID,String nume,String prenume){

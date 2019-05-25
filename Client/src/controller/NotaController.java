@@ -18,21 +18,44 @@ public class NotaController {
 
         try(Statement statement = CreateConnection.connection.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from activitate where id_elev = " + idElev
-                    + " and id_Materie = " + idMaterie)){
+                    + " and id_Materie = " + idMaterie + " and nota is not null")){
             while (resultSet.next()){
                 nota.add(new Nota(new ElevController().getById(resultSet.getInt(1)),
                         new MaterieController().getMaterieById(resultSet.getInt(2)),
                         new ProfesorController().getProfesorById(resultSet.getInt(3)),
                         resultSet.getInt(4),
-//                        LocalDate.parse(resultSet.getString(5))
-                        LocalDate.parse("01-JAN-19")
-
+                        resultSet.getObject(5,LocalDate.class)
                         ));
             }
         } catch (SQLException e){
             System.out.println("Exceptie: " + e);
             return nota;
         } catch (NumberFormatException f){
+            System.out.println("Exceptie: " + f);
+            return nota;
+        }
+        return nota;
+    }
+
+    public List<Nota> getAbsente(int idElev, int idMaterie){
+        List<Nota> nota = new LinkedList<>();
+
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select * from activitate where id_elev = " + idElev
+                    + " and id_Materie = " + idMaterie + " and nota is null")){
+            while (resultSet.next()){
+                nota.add(new Nota(new ElevController().getById(resultSet.getInt(1)),
+                        new MaterieController().getMaterieById(resultSet.getInt(2)),
+                        new ProfesorController().getProfesorById(resultSet.getInt(3)),
+                        resultSet.getInt(4),
+                        resultSet.getObject(5,LocalDate.class)
+                ));
+            }
+        } catch (SQLException e){
+            System.out.println("Exceptie: " + e);
+            return nota;
+        } catch (NumberFormatException f){
+            System.out.println("Exceptie: " + f);
             return nota;
         }
         return nota;

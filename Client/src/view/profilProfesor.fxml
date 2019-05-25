@@ -22,35 +22,34 @@
                <items>
                   <Menu mnemonicParsing="false" text="Materii Umaniste">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Romana" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Istorie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Geografie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Logica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Filozofie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Logica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Franceza" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Engleza" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Psihologie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Economie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Literatura Universala" />
+                        <MenuItem fx:id="limbaRomana" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Romana" />
+                        <MenuItem fx:id="istorie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Istorie" />
+                        <MenuItem fx:id="geografie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Geografie" />
+                        <MenuItem fx:id="logica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Logica" />
+                        <MenuItem fx:id="filozofie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Filozofie" />
+                        <MenuItem fx:id="limbaFranceza" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Franceza" />
+                        <MenuItem fx:id="limbaEngleza" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Engleza" />
+                        <MenuItem fx:id="pshihologie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Psihologie" />
+                        <MenuItem fx:id="economie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Economie" />
+                        <MenuItem fx:id="literaturaUniversala" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Literatura Universala" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Materii Reale">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Matematica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Fizica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Chimie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Biologie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Informatica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="TIC" />
+                        <MenuItem fx:id="matematica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Matematica" />
+                        <MenuItem fx:id="fizica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Fizica" />
+                        <MenuItem fx:id="chimie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Chimie" />
+                        <MenuItem fx:id="biologie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Biologie" />
+                        <MenuItem fx:id="informatica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Informatica" />
+                        <MenuItem fx:id="tic" mnemonicParsing="false" onAction="#buttonMarksPressed" text="TIC" />
                      </items>
                   </Menu>
                   <Menu mnemonicParsing="false" text="Materii Vocationale">
                      <items>
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Desen" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Educatie Muzicala" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Educatie Fizica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Religie" />
+                        <MenuItem fx:id="desen" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Desen" />
+                        <MenuItem fx:id="educatieMuzicala" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Educatie Muzicala" />
+                        <MenuItem fx:id="educatieFizica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Educatie Fizica" />
+                        <MenuItem fx:id="religie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Religie" />
                      </items>
                   </Menu>
                </items>

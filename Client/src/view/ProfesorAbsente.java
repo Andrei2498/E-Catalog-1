@@ -1,5 +1,8 @@
 package view;
 
+import controller.NotaController;
+import entity.Elev;
+import entity.Nota;
 import javafx.beans.binding.Bindings;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -23,6 +26,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
+import java.util.List;
 import java.util.ResourceBundle;
 
 public class ProfesorAbsente implements Initializable {
@@ -79,16 +83,24 @@ public class ProfesorAbsente implements Initializable {
 
     private ObservableList<AbsenteElevi> getAbsenteAdaugare(){
         ObservableList<AbsenteElevi> absente= FXCollections.observableArrayList();
-        absente.add(new AbsenteElevi(1,"Miron","Andrei"));
-        absente.add(new AbsenteElevi(2,"Pirlog","Marcel"));
-        absente.add(new AbsenteElevi(3,"adasd","3sdfsdfsdf"));
+//        absente.add(new AbsenteElevi(1,"Miron","Andrei"));
+//        absente.add(new AbsenteElevi(2,"Pirlog","Marcel"));
+//        absente.add(new AbsenteElevi(3,"adasd","3sdfsdfsdf"));
+        for (Elev elev : Client.elevs) {
+            absente.add(new AbsenteElevi(elev.getId(),elev.getNume(),elev.getPrenume()));
+        }
         return absente;
     }
 
     private ObservableList<AfisareAbsente> getAbsente(){
         ObservableList<AfisareAbsente> absente=FXCollections.observableArrayList();
-        absente.add(new AfisareAbsente("Miron","Andrei",LocalDate.of(2019,2,17)));
-        absente.add(new AfisareAbsente("Pirlog","Marcel",LocalDate.of(2019,7,15)));
+        NotaController notaController = new NotaController();
+        List<entity.Nota> notes = notaController.getNota(1,81);
+        for (Nota nota: notes) {
+            absente.add(new AfisareAbsente(nota.getProfesor().getNume(),nota.getProfesor().getPrenume(),nota.getDataNotare()));
+        }
+//        absente.add(new AfisareAbsente("Miron","Andrei",LocalDate.of(2019,2,17)));
+//        absente.add(new AfisareAbsente("Pirlog","Marcel",LocalDate.of(2019,7,15)));
         return absente;
 
     }
