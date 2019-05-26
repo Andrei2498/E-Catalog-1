@@ -15,7 +15,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="741.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StudentNote">
+<AnchorPane prefHeight="741.0" prefWidth="1320.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.StudentNote">
    <children>
       <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#af1c1c" height="65.0" layoutY="686.0" stroke="BLACK" strokeType="INSIDE" width="1346.0" />
       <Text fill="WHITE" layoutX="725.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Medie curenta:">
@@ -74,7 +74,7 @@
                </items></Menu>
             <Menu mnemonicParsing="false" text="Note">
                <items>
-                  <Menu mnemonicParsing="false" text="Materii Umaniste">
+                  <Menu fx:id="materiiUmane" mnemonicParsing="false" text="Materii Umaniste">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Limba Romana" />
                         <MenuItem mnemonicParsing="false" text="Istorie" />
@@ -89,7 +89,7 @@
                         <MenuItem mnemonicParsing="false" text="Literatura Universala" />
                      </items>
                   </Menu>
-                  <Menu mnemonicParsing="false" text="Materii Reale">
+                  <Menu fx:id="materiiReale" mnemonicParsing="false" text="Materii Reale">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Matematica" />
                         <MenuItem mnemonicParsing="false" text="Fizica" />
@@ -99,7 +99,7 @@
                         <MenuItem mnemonicParsing="false" text="TIC" />
                      </items>
                   </Menu>
-                  <Menu mnemonicParsing="false" text="Materii Vocationale">
+                  <Menu fx:id="materiiVocationale" mnemonicParsing="false" text="Materii Vocationale">
                      <items>
                         <MenuItem mnemonicParsing="false" text="Desen" />
                         <MenuItem mnemonicParsing="false" text="Educatie Muzicala" />

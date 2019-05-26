@@ -20,6 +20,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseButton;
 import javafx.stage.Stage;
+import oracle.ons.Cli;
 
 import java.io.IOException;
 import java.net.URL;
@@ -96,10 +97,10 @@ public class ProfesorNote implements Initializable {
     private ObservableList<AfisareNote> getNote(){
         ObservableList<AfisareNote> note=FXCollections.observableArrayList();
         NotaController notaController = new NotaController();
-        List<Nota> notes = notaController.getNota(1,81);
-        for (Nota nota: notes) {
-            note.add(new AfisareNote(nota.getElev().getNume(),nota.getElev().getPrenume(),
-                        nota.getNota(),nota.getDataNotare()));
+        List<Nota> notes;
+        notes = notaController.getAllNotes(Client.profesor.getMaterie().getId(),Client.profesor.getId());
+        for ( Nota nota : notes ) {
+            note.add(new AfisareNote(Client.profesor.getNume(), Client.profesor.getPrenume(), nota.getNota(), nota.getDataNotare()));
         }
         return note;
     }

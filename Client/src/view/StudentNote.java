@@ -1,5 +1,6 @@
 package view;
 
+import controller.NotaController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -47,7 +48,8 @@ public class StudentNote implements Initializable {
     @FXML
     Text medieCurenta;
 
-
+    @FXML
+    Text limbaRomana;
     /*Button pannel methods for changing scene.*/
 
     public void buttonProfilePressed(ActionEvent event){
@@ -64,15 +66,20 @@ public class StudentNote implements Initializable {
     /*---- Populare lista cu notele studentului.----*/
     private ObservableList<Nota> getNote(){
         ObservableList<Nota> note= FXCollections.observableArrayList();
-        Nota nota=new Nota(3,LocalDate.of(2019,02,17),"Andrei","Nu");
-        Nota nota1=new Nota(9,LocalDate.of(2019,07,15),"Andrsdsei","Da");
-        Nota nota2=new Nota(6,LocalDate.of(2019,05,25),"Andrefdgdfgi","Da");
-        note.add(nota);
-        note.add(nota1);
-        note.add(nota2);
+        List<entity.Nota> notes = new NotaController().getNota(1,81);
+        for (entity.Nota nota: notes) {
+            note.add(new Nota(nota.getNota(),nota.getDataNotare(),nota.getProfesor().getNume(),"Nu"));
+        }
+//        Nota nota=new Nota(3,LocalDate.of(2019,02,17),"Andrei","Nu");
+//        Nota nota1=new Nota(9,LocalDate.of(2019,07,15),"Andrsdsei","Da");
+//        Nota nota2=new Nota(6,LocalDate.of(2019,05,25),"Andrefdgdfgi","Da");
+//        note.add(nota);
+//        note.add(nota1);
+//        note.add(nota2);
         return note;
     }
-
+    // 895IWF878ILV
+    // E.agae.ana
 
     /*---- Initializare variabile.----*/
     //DE IMPLEMENTAT METODELE DE INITIALIZARE!!!!
@@ -80,6 +87,7 @@ public class StudentNote implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         float medie=0;
+        limbaRomana.setVisible(true);
         coloanaNota.setCellValueFactory(new PropertyValueFactory<>("nota"));
         coloanaData.setCellValueFactory(new PropertyValueFactory<>("data"));
         coloanaProfesor.setCellValueFactory(new PropertyValueFactory<>("profesor"));
