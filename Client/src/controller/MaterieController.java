@@ -22,4 +22,18 @@ public class MaterieController {
         }
         return materie;
     }
+
+    public int getSpecificMateire(int clasaElev, String numeMaterie, String profil){
+        int idMaterie = 0;
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select id from materii where clasa = " + clasaElev + " and nume like \'" + numeMaterie + "\' and profil like \'" + profil + "\'")){
+            resultSet.next();
+            idMaterie = resultSet.getInt(1);
+        } catch (SQLException e){
+            return 0;
+        } catch (NumberFormatException f){
+            return 0;
+        }
+        return idMaterie;
+    }
 }

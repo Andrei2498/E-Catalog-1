@@ -20,53 +20,12 @@
             <Menu mnemonicParsing="false" text="Profil" />
             <Menu mnemonicParsing="false" text="Note">
                <items>
-                  <Menu mnemonicParsing="false" text="Materii Umaniste">
-                     <items>
-                        <MenuItem fx:id="limbaRomana" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Romana" />
-                        <MenuItem fx:id="istorie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Istorie" />
-                        <MenuItem fx:id="geografie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Geografie" />
-                        <MenuItem fx:id="logica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Logica" />
-                        <MenuItem fx:id="filozofie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Filozofie" />
-                        <MenuItem fx:id="limbaFranceza" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Franceza" />
-                        <MenuItem fx:id="limbaEngleza" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Engleza" />
-                        <MenuItem fx:id="pshihologie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Psihologie" />
-                        <MenuItem fx:id="economie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Economie" />
-                        <MenuItem fx:id="literaturaUniversala" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Literatura Universala" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Materii Reale">
-                     <items>
-                        <MenuItem fx:id="matematica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Matematica" />
-                        <MenuItem fx:id="fizica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Fizica" />
-                        <MenuItem fx:id="chimie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Chimie" />
-                        <MenuItem fx:id="biologie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Biologie" />
-                        <MenuItem fx:id="informatica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Informatica" />
-                        <MenuItem fx:id="tic" mnemonicParsing="false" onAction="#buttonMarksPressed" text="TIC" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Materii Vocationale">
-                     <items>
-                        <MenuItem fx:id="desen" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Desen" />
-                        <MenuItem fx:id="educatieMuzicala" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Educatie Muzicala" />
-                        <MenuItem fx:id="educatieFizica" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Educatie Fizica" />
-                        <MenuItem fx:id="religie" mnemonicParsing="false" onAction="#buttonMarksPressed" text="Religie" />
-                     </items>
-                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Show" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Absente">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#buttonAbsentePressed" text="Show" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Observatii">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#buttonObservatiiPressed" text="Show" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Statistici">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#buttonStatisticiPressed" text="Show" />
                </items>
             </Menu>
          </menus>

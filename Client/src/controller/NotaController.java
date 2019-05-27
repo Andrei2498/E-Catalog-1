@@ -88,4 +88,74 @@ public class NotaController {
         }
         return nota;
     }
+
+    public List<Nota> getAllAlsente(int idMaterie, int idProfesor){
+        List<Nota> nota = new LinkedList<>();
+        Profesor profesor = new ProfesorController().getProfesorById(idProfesor);
+        String functionLogin = "{ ? = call noteout.litabsente(?,?) }";
+        CallableStatement callableStatement = null;
+        try{
+            callableStatement = CreateConnection.connection.prepareCall(functionLogin);
+            callableStatement.registerOutParameter(1, Types.VARCHAR);
+            callableStatement.setInt(2,idMaterie);
+            callableStatement.setInt(3,idProfesor);
+            callableStatement.execute();
+            functionLogin = callableStatement.getString(1);
+            String[] prof = functionLogin.split(">");
+            for (String string : prof ) {
+                String[] aux = string.split("_");
+                nota.add(new Nota(new ElevController().getById(Integer.parseInt(aux[0])),
+                        profesor.getMaterie(),profesor,Integer.parseInt(aux[1]),LocalDate.now()));
+            }
+        } catch (SQLException e){
+            System.out.println("Exceptie: " + e);
+            return nota;
+        } catch (NumberFormatException f){
+            System.out.println("Exceptie: " + f);
+            return nota;
+        }
+        return nota;
+    }
+//    private Elev elev;
+//    private Materie materie;
+//    private Profesor profesor;
+//    private int nota;
+//    private LocalDate dataNotare;
+    public  List<Nota> getAbsenteElevi(int idElev){
+        List<Nota> absente = new LinkedList<>();
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select id_materie,id_profesor,data_notare from activitate where id_elev = " + idElev + " and nota is null")){
+            while (resultSet.next()){
+                absente.add(new Nota(null,new MaterieController().getMaterieById(resultSet.getInt(1)),new ProfesorController().getProfesorById(2),0,LocalDate.now()));
+            }
+        } catch (SQLException e){
+            System.out.println("Exceptie: " + e);
+            return absente;
+        }
+        return absente;
+    }
+
+    public int getNumarAbsenta(int idMaterie, int idElev){
+        int result = 0;
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select count(*) from activitate where id_elev = " + idElev + " and id_materie = " + idMaterie + " and nota is null")){
+            resultSet.next();
+            result = resultSet.getInt(1);
+        } catch (SQLException e){
+            return -1;
+        }
+        return result;
+    }
+
+    public int getTotalAbsente(int idElev){
+        int result =0;
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select count(*) from activitate where id_elev = " + idElev + " and nota is null")){
+            resultSet.next();
+            result = resultSet.getInt(1);
+        } catch (SQLException e){
+            return -1;
+        }
+        return result;
+    }
 }

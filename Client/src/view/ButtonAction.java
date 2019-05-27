@@ -10,12 +10,30 @@ import java.io.IOException;
 
 public class ButtonAction {
 
-    ActionEvent event;
+    public ActionEvent event;
     AnchorPane rootPane;
     String typeAccount;
     Integer idElev;
     String numeElev;
     String prenumeElev;
+    String profilelev;
+    String anElev;
+
+    public String getProfilelev() {
+        return profilelev;
+    }
+
+    public void setProfilelev(String profilelev) {
+        this.profilelev = profilelev;
+    }
+
+    public String getAnElev() {
+        return anElev;
+    }
+
+    public void setAnElev(String anElev) {
+        this.anElev = anElev;
+    }
 
     public void setEvent(ActionEvent event){
         this.event=event;
@@ -41,7 +59,7 @@ public class ButtonAction {
                 break;
         }
 
-        System.out.println(((MenuItem)event.getSource()).getText()); //asa luam numele de la event, FOARTE IMPORTANT
+//        System.out.println(((MenuItem)event.getSource()).getText()); //asa luam numele de la event, FOARTE IMPORTANT
 
     }
 

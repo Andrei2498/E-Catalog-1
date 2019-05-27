@@ -1,5 +1,6 @@
 package view;
 
+import controller.ElevController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -58,8 +59,8 @@ public class StudentStatistici implements Initializable {
 
     private ObservableList<PieChart.Data> getData1(){
         ObservableList<PieChart.Data> data= FXCollections.observableArrayList();
-        data.addAll(new PieChart.Data("Real",45),
-                new PieChart.Data("Uman",55));
+//        data.add(new PieChart.Data("Real",new ElevController().getNumberReal()));
+//        data.add(new PieChart.Data("Uman", new ElevController().getNumberUman()));
         return data;
     }
 

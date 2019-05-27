@@ -100,7 +100,7 @@ public class ProfesorNote implements Initializable {
         List<Nota> notes;
         notes = notaController.getAllNotes(Client.profesor.getMaterie().getId(),Client.profesor.getId());
         for ( Nota nota : notes ) {
-            note.add(new AfisareNote(Client.profesor.getNume(), Client.profesor.getPrenume(), nota.getNota(), nota.getDataNotare()));
+            note.add(new AfisareNote(nota.getElev().getNume(), nota.getElev().getPrenume(), nota.getNota(), nota.getDataNotare()));
         }
         return note;
     }

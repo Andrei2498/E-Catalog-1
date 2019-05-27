@@ -41,12 +41,16 @@ public class ProfesorController {
     public ArrayList<Elev> getAllMyElevi(Profesor profesor){
         ArrayList<Elev> elevs = new ArrayList<>();
         try(Statement statement = CreateConnection.connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("select * from ELEVI where CLASA like \'" + profesor.getMaterie().getClasa() + "%\' and id_liceu = " + profesor.getLiceu().getId())){
+            ResultSet resultSet = statement.executeQuery("select id from ELEVI where id_liceu = " + profesor.getLiceu().getId() + " and CLASA like \'" + profesor.getMaterie().getClasa() + "%\'" +
+                    " and profil like \'" + profesor.getMaterie().getProfil() + "\'")){
             while (resultSet.next()){
-                elevs.add(new Elev(Integer.parseInt(resultSet.getString(1)),resultSet.getString(2),resultSet.getString(3),
-                        resultSet.getString(4),Integer.parseInt(resultSet.getString(5)),resultSet.getString(6),
-                        resultSet.getString(7),resultSet.getString(8),new LiceuController().infoLiceu(Integer.parseInt(resultSet.getString(9))),
-                        resultSet.getString(10),resultSet.getString(11)));
+//                elevs.add(new Elev(Integer.parseInt(resultSet.getString(1)),resultSet.getString(2),resultSet.getString(3),
+//                        resultSet.getString(4),Integer.parseInt(resultSet.getString(5)),resultSet.getString(6),
+//                and (select id_elev from activitate where id_elev = e.id and id_materie = " + profesor.getMaterie().getId() + ") " +
+//                " and id_profesor = " + profesor.getId() + ") > 0
+//                        resultSet.getString(7),resultSet.getString(8),new LiceuController().infoLiceu(Integer.parseInt(resultSet.getString(9))),
+//                        resultSet.getString(10),resultSet.getString(11)));
+                elevs.add(new ElevController().getById(resultSet.getInt(1)));
             }
         } catch (SQLException e){
             System.out.println("Exceptie: " + e);

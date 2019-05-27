@@ -89,6 +89,7 @@ public class Client extends Application implements Initializable {
                 createSecondStage("Student.fxml");
                 ((Node) event.getSource()).getScene().getWindow().hide();
                 action.setTypeAccount("Student");
+
             } else {
                 invalidLoginMsg.setVisible(true);
             }

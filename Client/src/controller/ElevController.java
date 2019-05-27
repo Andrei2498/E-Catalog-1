@@ -187,4 +187,39 @@ public class ElevController {
         return elev;
     }
 
+    public int getNumberUman(){
+        int result = 0;
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select count(*) from elevi where profil like \'uman\'")) {
+            resultSet.next();
+            result = resultSet.getInt(1);
+        } catch (SQLException e){
+            return 0;
+        }
+        return result;
+    }
+
+    public int getNumberReal(int idLiceu){
+        int result = 0;
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select count(*) from elevi where profil like \'real\' and id_liceu = " + idLiceu)){
+            resultSet.next();
+            result = resultSet.getInt(1);
+        } catch (SQLException e){
+            return 0;
+        }
+        return result;
+    }
+
+    public int getNumberElevi(int idLiceu){
+        int result = 0;
+        try(Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select count(*) from elevi where id_liceu = " + idLiceu)){
+            resultSet.next();
+            result = resultSet.getInt(1);
+        } catch (SQLException e){
+            return 0;
+        }
+        return result;
+    }
 }

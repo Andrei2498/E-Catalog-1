@@ -66,26 +66,13 @@ public class ProfesorAbsente implements Initializable {
         Client.action.setStage("Absente");
     }
 
-    public void buttonStatisticiPressed(ActionEvent event){
-        Client.action.setEvent(event);
-        Client.action.setStage("Statistici");
-    }
-
     public void buttonProfilePressed(ActionEvent event){
         Client.action.setEvent(event);
         Client.action.setStage("Profile");
     }
 
-    public void buttonObservatiiPressed(ActionEvent event){
-        Client.action.setEvent(event);
-        Client.action.setStage("Observatii");
-    }
-
     private ObservableList<AbsenteElevi> getAbsenteAdaugare(){
         ObservableList<AbsenteElevi> absente= FXCollections.observableArrayList();
-//        absente.add(new AbsenteElevi(1,"Miron","Andrei"));
-//        absente.add(new AbsenteElevi(2,"Pirlog","Marcel"));
-//        absente.add(new AbsenteElevi(3,"adasd","3sdfsdfsdf"));
         for (Elev elev : Client.elevs) {
             absente.add(new AbsenteElevi(elev.getId(),elev.getNume(),elev.getPrenume()));
         }
@@ -95,12 +82,10 @@ public class ProfesorAbsente implements Initializable {
     private ObservableList<AfisareAbsente> getAbsente(){
         ObservableList<AfisareAbsente> absente=FXCollections.observableArrayList();
         NotaController notaController = new NotaController();
-        List<entity.Nota> notes = notaController.getNota(1,81);
+        List<entity.Nota> notes = notaController.getAllAlsente(Client.profesor.getMaterie().getId(),Client.profesor.getId());
         for (Nota nota: notes) {
-            absente.add(new AfisareAbsente(nota.getProfesor().getNume(),nota.getProfesor().getPrenume(),nota.getDataNotare()));
+            absente.add(new AfisareAbsente(nota.getElev().getNume(),nota.getElev().getPrenume(),nota.getDataNotare()));
         }
-//        absente.add(new AfisareAbsente("Miron","Andrei",LocalDate.of(2019,2,17)));
-//        absente.add(new AfisareAbsente("Pirlog","Marcel",LocalDate.of(2019,7,15)));
         return absente;
 
     }

@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="780.0" maxWidth="1320.0" minHeight="740.0" minWidth="1280.0" styleClass="background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProfesorNote">
+<AnchorPane maxHeight="780.0" maxWidth="1320.0" minHeight="740.0" minWidth="1280.0" styleClass="background" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.ProfesorNote">
    <children>
       <MenuBar prefHeight="37.0" prefWidth="1341.0">
          <menus>
@@ -23,54 +23,12 @@
             </Menu>
             <Menu mnemonicParsing="false" text="Note">
                <items>
-                  <Menu mnemonicParsing="false" text="Materii Umaniste">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Romana" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Istorie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Geografie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Logica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Filozofie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Logica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Franceza" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Limba Engleza" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Psihologie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Economie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Literatura Universala" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Materii Reale">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Matematica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Fizica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Chimie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Biologie" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Informatica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="TIC" />
-                     </items>
-                  </Menu>
-                  <Menu mnemonicParsing="false" text="Materii Vocationale">
-                     <items>
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Desen" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Educatie Muzicala" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Educatie Fizica" />
-                        <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Religie" />
-                     </items>
-                  </Menu>
+                  <MenuItem mnemonicParsing="false" onAction="#buttonMarksPressed" text="Show" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="Absente">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#buttonAbsentePressed" text="Show" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Observatii">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#buttonObservatiiPressed" text="Show" />
-               </items>
-            </Menu>
-            <Menu mnemonicParsing="false" text="Statistici">
-               <items>
-                  <MenuItem mnemonicParsing="false" onAction="#buttonStatisticiPressed" text="Show" />
                </items>
             </Menu>
          </menus>
