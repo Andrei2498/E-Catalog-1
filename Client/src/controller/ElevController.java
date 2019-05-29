@@ -2,9 +2,12 @@ package controller;
 
 import connection.CreateConnection;
 import entity.Elev;
+import entity.Parinte;
 import entity.Profesor;
+import javafx.util.Pair;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -187,10 +190,10 @@ public class ElevController {
         return elev;
     }
 
-    public int getNumberUman(){
+    public int getNumberUman(int idLiceu){
         int result = 0;
         try(Statement statement = CreateConnection.connection.createStatement();
-            ResultSet resultSet = statement.executeQuery("select count(*) from elevi where profil like \'uman\'")) {
+            ResultSet resultSet = statement.executeQuery("select count(*) from elevi where profil like \'uman\' and id_liceu = " + idLiceu)) {
             resultSet.next();
             result = resultSet.getInt(1);
         } catch (SQLException e){
@@ -219,6 +222,65 @@ public class ElevController {
             result = resultSet.getInt(1);
         } catch (SQLException e){
             return 0;
+        }
+        return result;
+    }
+
+    public int getNumberPerClass(int idLiceu, String clasa){
+        int result=0;
+        try{
+            Statement statement = CreateConnection.connection.createStatement();
+            ResultSet resultSet = statement.executeQuery("select count(*) from elevi where id_liceu= " + idLiceu + " and clasa like \'" + clasa + "\'");
+            resultSet.next();
+            result=resultSet.getInt(1);
+        } catch (SQLException e){
+            System.out.println(e);
+            return 0;
+        }
+        return result;
+    }
+
+    public List<Pair<Elev,Double>> get10Liceu(int idElev){
+        List<Pair<Elev,Double>> result = new LinkedList<>();
+        CallableStatement callableStatement = null;
+        String top10 = "{ ? = call topelevi.top10dinlicee(?) }";
+        try{
+            callableStatement = CreateConnection.connection.prepareCall(top10);
+            callableStatement.registerOutParameter(1, Types.VARCHAR);
+            callableStatement.setInt(2,idElev);
+            callableStatement.execute();
+            top10 = callableStatement.getString(1);
+//            System.out.println(top10);
+            String[] pair = top10.split(">");
+            for (String string : pair) {
+                String[] information = string.split("_");
+                result.add(new Pair<Elev,Double>(new ElevController().getById(Integer.parseInt(information[0])),Double.parseDouble(information[1])));
+            }
+        } catch (SQLException e){
+            System.out.println("Exceprie: " + e);
+            return result;
+        }
+        return result;
+    }
+
+    public List<Pair<Elev,Double>> get10Clasa(int idElev){
+        List<Pair<Elev,Double>> result = new LinkedList<>();
+        CallableStatement callableStatement = null;
+        String top10 = "{ ? = call topelevi.top10clasa(?) }";
+        try{
+            callableStatement = CreateConnection.connection.prepareCall(top10);
+            callableStatement.registerOutParameter(1,Types.VARCHAR);
+            callableStatement.setInt(2,idElev);
+            callableStatement.execute();
+            top10 = callableStatement.getString(1);
+            String[] pair = top10.split(">");
+            for (String string : pair ) {
+                String[] information = string.split("_");
+                result.add(new Pair<>(new ElevController().getById(Integer.parseInt(information[0])),Double.parseDouble(information[1])));
+            }
+        } catch (SQLException e){
+            System.out.println("Exceprie: " + e);
+            return result;
         }
         return result;
     }

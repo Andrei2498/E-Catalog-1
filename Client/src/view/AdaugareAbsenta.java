@@ -1,5 +1,6 @@
 package view;
 
+import controller.NotaController;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.text.Text;
@@ -19,8 +20,9 @@ public class AdaugareAbsenta implements Initializable {
 
 
     public void buttonAction(ActionEvent event){
-        System.out.println("DE IMPLEMENTAT");
+        new NotaController().inserreazaAbsenta(Integer.parseInt(idElev.getText()),Client.profesor.getMaterie().getId(),Client.profesor.getId());
     }
+
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {

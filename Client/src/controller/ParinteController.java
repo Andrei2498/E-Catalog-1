@@ -2,6 +2,7 @@ package controller;
 
 import connection.CreateConnection;
 import entity.Parinte;
+import view.Client;
 
 import java.sql.CallableStatement;
 import java.sql.SQLException;
@@ -28,6 +29,8 @@ public class ParinteController {
             parinte.setNr_telefon(parent[6]);
             parinte.setEmail(parent[7]);
             parinte.setElev(new ElevController().getById(Integer.parseInt(parent[8])));
+            Client.elev = parinte.getElev();
+            Client.elev.setProfesors(new ElevController().getAllTeachers(Client.elev.getId()));
         } catch (SQLException e){
             return parinte;
         } catch (NumberFormatException f){

@@ -158,4 +158,39 @@ public class NotaController {
         }
         return result;
     }
+
+    public void insertNota(int idElev, int idMaterie, int idProfesor, int nota, boolean isTeza){
+        CallableStatement callableStatement = null;
+        String string;
+        if (isTeza){
+            string = "{ call insertNote(?,?,?,?) }";
+        } else {
+            string = "{ call insertTeze(?,?,?,?) }";
+        }
+        try{
+            callableStatement = CreateConnection.connection.prepareCall(string);
+            callableStatement.setInt(1,nota);
+            callableStatement.setInt(2,idElev);
+            callableStatement.setInt(3,idMaterie);
+            callableStatement.setInt(4,idProfesor);
+            callableStatement.execute();
+        } catch (SQLException e){
+            System.out.println("Exceptie: " + e);
+        }
+    }
+
+    public void inserreazaAbsenta(int idElev, int idMaterie, int idProfesor){
+        CallableStatement callableStatement = null;
+        String string = "{ call insertNote(?,?,?,?) }";
+        try{
+            callableStatement = CreateConnection.connection.prepareCall(string);
+            callableStatement.setInt(1,0);
+            callableStatement.setInt(2,idElev);
+            callableStatement.setInt(3,idMaterie);
+            callableStatement.setInt(4,idProfesor);
+            callableStatement.execute();
+        } catch (SQLException e){
+            System.out.println(e);
+        }
+    }
 }

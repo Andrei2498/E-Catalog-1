@@ -1,6 +1,8 @@
 package view;
 
+import controller.NotaController;
 import javafx.collections.FXCollections;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.text.Text;
@@ -23,7 +25,14 @@ public class AdaugareNota implements Initializable {
     @FXML
     private Button butonAdaugare;
 
-
+    public void buttonAdaugare(ActionEvent event){
+        NotaController nota= new NotaController();
+        if (isTeza.isSelected()){
+            nota.insertNota(Integer.parseInt(idElev.getText()),Client.profesor.getMaterie().getId(),Client.profesor.getId(),valoareNota.getValue(),true);
+        } else {
+            nota.insertNota(Integer.parseInt(idElev.getText()),Client.profesor.getMaterie().getId(),Client.profesor.getId(),valoareNota.getValue(),false);
+        }
+    }
 
 
     @Override
