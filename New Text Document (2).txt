@@ -1,0 +1,16 @@
+https://dzone.com/articles/java-thread-tutorial-creating-threads-and-multithr
+
+http://tutorials.jenkov.com/java-concurrency/creating-and-starting-threads.html
+
+https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/684196?MSP430FR4133-multiple-ADC-channel-sequencing-reading-probblem
+
+https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/687160
+
+https://e2e.ti.com/support/microcontrollers/msp430/f/166/t/405491
+
+https://coder-tronics.com/msp430-adc-tutorial/
+
+https://forum.43oh.com/topic/10203-micropower-microvoltmeter-with-msp430fr4133-and-mcp3422-adc/
+
+https://www.embeddedrelated.com/showarticle/199.php
+https://www.embeddedrelated.com/showarticle/420.php
